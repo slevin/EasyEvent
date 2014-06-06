@@ -11,6 +11,8 @@
 
 @interface SLButtonTapEvent : SLEvent
 
+@property (copy, nonatomic) UIColor *color;
+
 - (instancetype)initWithColor:(UIColor *)color;
 
 @end

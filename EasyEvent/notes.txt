@@ -47,6 +47,8 @@ can we track the source (caller?)
 
 ideally want to set up independent processes that can talk to each other
 
+might need a global setting(or macro) to prevent notificaion name clashes
+
 can listen on display link?
 
 good examples for me
@@ -58,3 +60,13 @@ good examples for me
    or main view to update the bite if he's not
  and a place where we can update the database with the new paths
 
+what about this?
+Decoupled in time. Unlike the other event types which are synchronous, the delivery of a notification from the message bus is non-deterministic. It is delayed at minimum by one run loop, which can cause problems by creating opportunities for inconsistent states to exist.
+
+build up statemachines as part of it?
+ state machine server triggers other events?
+ 
+ filters seem possibly interesting
+ 
+ listening or triggering event on specific queue
+ 

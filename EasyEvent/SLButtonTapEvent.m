@@ -10,7 +10,6 @@
 
 @interface SLButtonTapEvent()
 
-@property (copy, nonatomic) UIColor *color;
 
 @end
 
@@ -20,7 +19,7 @@
 {
     self = [super init];
     if (self) {
-        color = color;
+        _color = color;
     }
     return self;
 }

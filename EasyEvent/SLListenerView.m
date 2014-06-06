@@ -28,7 +28,8 @@
 
 - (void)buttonTapListen:(SLEvent *)event
 {
-    
+    SLButtonTapEvent *bevent = (SLButtonTapEvent *)event;
+    self.backgroundColor = bevent.color;
 }
 
 @end
