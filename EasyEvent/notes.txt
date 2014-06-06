@@ -1,0 +1,60 @@
+be able to create an event and have that semi/automatically
+ take object parameters and values and wrap them up into a notification for notification center
+ 
+ and then creating a listener automatically creates something that subscribes to those notifications
+  and have the notification get unwrapped into something usable
+  
+technically the event itself can get put into the notification
+so really its just a matter of creating a valid name and sticing myself into the package
+ and knowing how to unwrap it and return it
+ 
+nice to have debugging mode to print out where things were called from and delivered to
+
+nice to make sure its testable
+
+can listen to event through a delegate
+can listen to event through a block
+
+make sure its compatable with testing
+
+can make a serialized listener so listener gets piped through a queue
+can grab the items off the queue when you want them to
+  so you don't have
+can clear the queue
+
+can throttle the events
+
+is it possible to make anonymous events with a name and a dictionary
+ (basically the same as a notification at that point but can still take
+  advantage of the queueing and throttling)
+  
+can make a before trigger
+after trigger
+before/after handled
+
+keep it useful instead of just gadgetey
+ I think reactivecocoa got gadgetey
+ with we can do anything but most of it wasn't very useful
+ 
+ then they tried to phase out the interesting stuff that I thought
+ 
+can you hook up an event to kvo? seems like a waste
+
+the most important part for me is to tie remote modules together in an interesting,
+typesafe way instead of being a funky rewiring of more obvious method calls
+
+can we track the source (caller?)
+
+ideally want to set up independent processes that can talk to each other
+
+can listen on display link?
+
+good examples for me
+- lookup calls send events of stuff found and loaded bites listens
+ for notifications and reloads
+- timer event could trigger lookup call instead of a callback
+- button tap sends an event to open
+- close sends finished event which is multicast to swipe view if he's listening
+   or main view to update the bite if he's not
+ and a place where we can update the database with the new paths
+

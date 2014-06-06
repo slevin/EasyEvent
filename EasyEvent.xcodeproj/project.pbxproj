@@ -19,6 +19,12 @@
 		7379B56119413D4300469D07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7379B54919413D4300469D07 /* UIKit.framework */; };
 		7379B56919413D4300469D07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7379B56719413D4300469D07 /* InfoPlist.strings */; };
 		7379B56B19413D4300469D07 /* EasyEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7379B56A19413D4300469D07 /* EasyEventTests.m */; };
+		7379B57719413D6400469D07 /* SLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7379B57519413D6400469D07 /* SLMainViewController.m */; };
+		7379B57819413D6400469D07 /* SLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7379B57619413D6400469D07 /* SLMainViewController.xib */; };
+		7379B57B19413DCB00469D07 /* SLListenerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7379B57A19413DCB00469D07 /* SLListenerView.m */; };
+		7379B57E19413EE300469D07 /* SLButtonTapEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7379B57D19413EE300469D07 /* SLButtonTapEvent.m */; };
+		7379B58119413F7D00469D07 /* SLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7379B58019413F7D00469D07 /* SLEvent.m */; };
+		7379B5831941436900469D07 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7379B5821941436900469D07 /* notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		7379B56619413D4300469D07 /* EasyEventTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyEventTests-Info.plist"; sourceTree = "<group>"; };
 		7379B56819413D4300469D07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7379B56A19413D4300469D07 /* EasyEventTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyEventTests.m; sourceTree = "<group>"; };
+		7379B57419413D6400469D07 /* SLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMainViewController.h; sourceTree = "<group>"; };
+		7379B57519413D6400469D07 /* SLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMainViewController.m; sourceTree = "<group>"; };
+		7379B57619413D6400469D07 /* SLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLMainViewController.xib; sourceTree = "<group>"; };
+		7379B57919413DCB00469D07 /* SLListenerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLListenerView.h; sourceTree = "<group>"; };
+		7379B57A19413DCB00469D07 /* SLListenerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLListenerView.m; sourceTree = "<group>"; };
+		7379B57C19413EE300469D07 /* SLButtonTapEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLButtonTapEvent.h; sourceTree = "<group>"; };
+		7379B57D19413EE300469D07 /* SLButtonTapEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLButtonTapEvent.m; sourceTree = "<group>"; };
+		7379B57F19413F7D00469D07 /* SLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEvent.h; sourceTree = "<group>"; };
+		7379B58019413F7D00469D07 /* SLEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEvent.m; sourceTree = "<group>"; };
+		7379B5821941436900469D07 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +127,16 @@
 				7379B55519413D4300469D07 /* SLAppDelegate.m */,
 				7379B55719413D4300469D07 /* Images.xcassets */,
 				7379B54C19413D4300469D07 /* Supporting Files */,
+				7379B57419413D6400469D07 /* SLMainViewController.h */,
+				7379B57519413D6400469D07 /* SLMainViewController.m */,
+				7379B57619413D6400469D07 /* SLMainViewController.xib */,
+				7379B57919413DCB00469D07 /* SLListenerView.h */,
+				7379B57A19413DCB00469D07 /* SLListenerView.m */,
+				7379B57C19413EE300469D07 /* SLButtonTapEvent.h */,
+				7379B57D19413EE300469D07 /* SLButtonTapEvent.m */,
+				7379B57F19413F7D00469D07 /* SLEvent.h */,
+				7379B58019413F7D00469D07 /* SLEvent.m */,
+				7379B5821941436900469D07 /* notes.txt */,
 			);
 			path = EasyEvent;
 			sourceTree = "<group>";
@@ -220,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7379B5831941436900469D07 /* notes.txt in Resources */,
+				7379B57819413D6400469D07 /* SLMainViewController.xib in Resources */,
 				7379B55019413D4300469D07 /* InfoPlist.strings in Resources */,
 				7379B55819413D4300469D07 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +270,10 @@
 			files = (
 				7379B55219413D4300469D07 /* main.m in Sources */,
 				7379B55619413D4300469D07 /* SLAppDelegate.m in Sources */,
+				7379B57719413D6400469D07 /* SLMainViewController.m in Sources */,
+				7379B58119413F7D00469D07 /* SLEvent.m in Sources */,
+				7379B57E19413EE300469D07 /* SLButtonTapEvent.m in Sources */,
+				7379B57B19413DCB00469D07 /* SLListenerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
